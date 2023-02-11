@@ -8,11 +8,11 @@ const incrementBtn = document.querySelector('button[data-action="increment"]');
 
 // 2.Додай слухачів кліків до кнопок, всередині яких збільшуй або зменшуй значення лічильника.
 // 3.Оновлюй інтерфейс новим значенням змінної counterValue.
-decrementBtn.addEventListener("click", () => {
+decrementBtn.addEventListener("click", (event) => {
   counterValue -= 1;
   value.textContent = counterValue;
 });
-incrementBtn.addEventListener("click", () => {
+incrementBtn.addEventListener("click", (event) => {
   counterValue += 1;
   value.textContent = counterValue;
 });
