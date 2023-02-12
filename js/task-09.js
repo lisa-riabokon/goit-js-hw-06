@@ -18,10 +18,10 @@ function onChangeColorBtnClick() {
   const randomColor = getRandomHexColor();
   body.style.backgroundColor = randomColor;
   // видає згенерований колір як на body, але в форматі rgb
-  spanColorChangeEl.textContent = body.style.backgroundColor;
+  // spanColorChangeEl.textContent = body.style.backgroundColor;
 
   // видає згенерований колір в форматі hex, а на body в форматі rgb і я не впевнена , чи збігаються вони
-  // spanColorChangeEl.textContent = randomColor;
+  spanColorChangeEl.textContent = randomColor;
 }
 
 buttonChangeColorEl.addEventListener("click", onChangeColorBtnClick);
