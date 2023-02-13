@@ -16,7 +16,7 @@ function onFormSubmit(event) {
   } = event.currentTarget;
 
   if (email.value === "" || password.value === "") {
-    return console.log("Будь ласка, заповніть усі поля!");
+    return alert("Будь ласка, заповніть усі поля!");
   } else {
     const userData = { email: email.value, password: password.value };
     console.log(userData);
