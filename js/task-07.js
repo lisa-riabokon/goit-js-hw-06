@@ -8,3 +8,5 @@ function onInputChangeSize(event) {
 }
 
 inputFontSizeSwitch.addEventListener("input", onInputChangeSize);
+
+console.log(inputFontSizeSwitch);
