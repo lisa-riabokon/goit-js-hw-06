@@ -2,6 +2,7 @@
 
 const inputFontSizeSwitch = document.querySelector("#font-size-control");
 const spanTextEl = document.querySelector("#text");
+spanTextEl.style.fontSize = `${inputFontSizeSwitch.value}px`;
 
 function onInputChangeSize(event) {
   spanTextEl.style.fontSize = `${event.currentTarget.value}px`;
@@ -9,4 +10,4 @@ function onInputChangeSize(event) {
 
 inputFontSizeSwitch.addEventListener("input", onInputChangeSize);
 
-console.log(inputFontSizeSwitch);
+console.log(inputFontSizeSwitch.value);
